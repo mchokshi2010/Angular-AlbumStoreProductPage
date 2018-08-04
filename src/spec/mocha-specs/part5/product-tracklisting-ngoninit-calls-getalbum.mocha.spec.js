@@ -8,7 +8,7 @@ describe('ProductTracklisting', function() {
     try {
       file = fs.readFileSync(__dirname + '/../../../app/product-tracklisting/product-tracklisting.component.ts').toString();
     } catch (e) {
-      assert(false, "ProductTracklistingComponent doesn't exist yet.")
+      assert(false, "ProductTrackListingComponent doesn't exist yet.")
     }
     let re = /ngOnInit\(\s*\)\s*\{\s*([\w\s\(\)\.\_\=\>]+)\;?\s*\}/
     let match = file.match(re);
@@ -38,9 +38,9 @@ describe('ProductTracklisting', function() {
     try {
       file = fs.readFileSync(__dirname + '/../../../app/product-tracklisting/product-tracklisting.component.ts').toString();
     } catch (e) {
-      assert(false, "ProductTracklistingComponent doesn't exist yet.")
+      assert(false, "ProductTrackListingComponent doesn't exist yet.")
     }
-    let re = /ProductTracklistingComponent\s*implements\s*OnInit\s*\{\s*(\w+)/
+    let re = /ProductTrackListingComponent\s*implements\s*OnInit\s*\{\s*(\w+)/
     let match = file.match(re);
     assert(match[1] == 'albumInfo', "The ProductTracklisting doesn't have a class property named `albumInfo`.")
   });
