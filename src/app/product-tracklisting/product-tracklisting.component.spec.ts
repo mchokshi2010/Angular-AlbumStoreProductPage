@@ -10,7 +10,7 @@ describe('ProductTrackListingComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ProductTrackListingComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
